@@ -1,8 +1,9 @@
-//your JS code here. If required.
-window.onload = function() {
-    // Create a new text node
-    var textNode = document.createTextNode("DOM load success");
+document.addEventListener(‘DOMContentLoaded’, function () {
 
-    // Append the text node to the body
-    document.body.appendChild(textNode);
-}
+// DOM is loaded, let’s write the string
+
+var body = document.body;
+
+body.innerHTML = ‘DOM load success’;
+
+});
