@@ -1,5 +1,8 @@
 //your JS code here. If required.
-const div=document.createElement("div");
-div.innerText="DOM load success";
-const body=document.getElementsByTagName("body")[0];
-body.insertBefore(div,body);
+window.onload = function() {
+    // Create a new text node
+    var textNode = document.createTextNode("DOM load success");
+
+    // Append the text node to the body
+    document.body.appendChild(textNode);
+}
